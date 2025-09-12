@@ -3,13 +3,24 @@
 
 int currentOperator;
 
-void startCalculator();
+void startCalculator(){
+    do{
+        printf("*** CALCULATOR***\n=================\n");
+        printf("1) Add \n");
+        printf("2) Subtract \n");
+        printf("3) Multiply\n");
+        printf("4) Divide\n");
+        printf("5) Power\n");
+        printf("0) EXIT\n");
+        printf("Choose:");
 
-void main(){
-
+        int choice;
+       
+    }while(1);
+    
 }
 
-
-void startCalculator(){
+void main(){
     
+    startCalculator();
 }
