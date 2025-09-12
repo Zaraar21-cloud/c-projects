@@ -3,6 +3,13 @@
 
 int currentOperator;
 
+void getNumbers(float *a, float *b){
+    printf("Enter the first number: ");
+    scanf(" %d", a);
+    printf("Enter the second number: ");
+    scanf(" %d", b);
+}
+
 void startCalculator(){
     do{
         printf("*** CALCULATOR***\n=================\n");
@@ -15,7 +22,49 @@ void startCalculator(){
         printf("Choose:");
 
         int choice;
-       
+        scanf("%d",&choice);
+        if (choice > 5 || choice < 0){
+            printf("Please choose a valid option!\n");
+            continue;
+        }else{
+            float a, b;
+            getNumbers(&a, &b);
+            switch(choice){
+                case 1:
+                {
+                    printf("\nThe sum is: %f \n", (a + b));
+                }
+                break;
+
+                case 2:
+                {
+                    printf("\nThe difference is: %f \n", (a - b));
+                }
+                break;
+
+                case 3:
+                {
+                    printf("\nThe product is: %f \n", (a * b));
+                }
+                break;
+                case 4:
+                {
+                    printf("\nThe quotient is: %f \n", (a / b));
+                }
+                break;
+
+                case 5:
+                {
+                    int result = 1;
+                    for(int i = 0; i < b; i++){
+                        result *= a;
+                    }
+                    printf("\nThe result is: %f \n", result);
+                }
+                break;
+            }
+        }
+
     }while(1);
     
 }
