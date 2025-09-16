@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /*
 @Zaraar
-Last Updated: 16-09-2025
+Last Updated: 16th September 2025
+A simple banking system that allows users to create an account, deposit, withdraw, and check balance.
 */
 
 typedef char string[20];
