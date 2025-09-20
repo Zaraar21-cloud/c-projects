@@ -54,6 +54,7 @@ int main() {
             delta = sqrt(delta);
             printf("Root1 = %.2f + i%.2f\n",(-b/(2*a)),(delta)/(2*a));
             printf("Root2 = %.2f - i%.2f\n",(-b/(2*a)),(delta)/(2*a));
+            break;
         }
     }
 }
